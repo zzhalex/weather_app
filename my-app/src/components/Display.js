@@ -25,6 +25,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+function onKeyDown(keyEvent) {
+  if ((keyEvent.charCode || keyEvent.keyCode) === 13) {
+    keyEvent.preventDefault();
+  }
+}
+
 function Display() {
   const classes = useStyles();
   const inputEl = useRef(null);
@@ -60,6 +66,7 @@ function Display() {
           className={classes.input}
           placeholder="City..."
           inputRef={inputEl}
+          onKeyDown={onKeyDown}
         />
         <IconButton
           className={classes.iconButton}

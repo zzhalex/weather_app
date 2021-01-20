@@ -3,20 +3,17 @@ import Header from "./components/Header";
 import Display from "./components/Display";
 import Login from "./components/Login";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
-  const [islogin, setlogin] = useState(true);
-  // const doLogin = (val) => {
-  //   setlogin(val);
-  // };
-  // const doLogout = () => {
-  //   setlogin(false);
-  // };
-
+  const [islogin, setlogin] = useState(false);
   const handleLogin = (val) => {
     setlogin(val);
   };
+  useEffect(() => {
+    if(localStorage.getItem("weatherapptoekn"))setlogin(true);
+  },[]);
+
   let main = islogin ? <Display /> : <Login signAction={handleLogin} />;
   return (
     <div className="App">
