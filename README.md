@@ -113,3 +113,9 @@ Have feedback for how we could make this assignment better? Please let us know.
 
 It’s a good chance to refresh some skills.
 
+### The feedback and suggestions from XXX 
+
+"Overall, I thought this was a really strong take home test submission for an intermediate engineer. Their README and code are both pretty clear. It would have been great to see some more tests, or to see how they would handle storing user credentials, but as that's a stretch goal I think the solution they have in place is fine. 
+
+One recommendation: including a collection of the requests they used to test the application in Postman could be pretty useful in the future, and would show off if they tested the application comprehensively."
+
